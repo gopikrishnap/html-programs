@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Forms</title>
+    <!-- <style>
+          .inp {
+            height: 30px;
+            border: solid 1px #ccc;
+            width: 200px;
+        }
+        
+        label {
+            font-family: Arial;
+            font-size: 13px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        div {
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            border: 0px;
+            background: blue;
+            padding: 10px;
+            color: #fff;
+        } 
+    </style> -->
+</head>
+</head>
+
+<body>
+
+	<form method="POST">
+		<div>
+			<label>First Name</label>
+			<br>
+			<input type="text" placeholder="Enter Your FIrst Name" class="inp" value="First Name" maxlength="10" name="userName" id="userName" required />
+		</div>
+		<div>
+			<label>Last Name</label> 
+			<br>
+			<input type="text" placeholder="Enter Your Last Name" name="lastName" id="lastName" required />	
+		</div>
+		<div>
+			<label>Email</label> 
+			<br>
+			<input type="email" placeholder="Enter Your Email Id" name="userEmail" id="userEmail" required />
+		</div>
+		<div>
+			<label>Mobile</label> 
+			<br>
+			<input type="number" maxlength="10" placeholder="Enter Your Phone Number" name="userMobile" id="userMobile" required />
+		</div>
+		<div>
+			<label>Password</label>
+			<br>
+			<input type="password" placeholder="Password" name="userPwd" id="userPwd" />	
+		</div>
+		<div>   
+			<label>Gender</label>
+			<br>
+			<input type="radio" name="gender" value="male" id="male" /> <label for="male">Male</label>
+			<input type="radio" name="gender" value="female" id="female" /> <label for="female">Female</label>
+		</div>
+		<div>
+			<label>Hobbies</label>
+			<br>
+			<input type="checkbox" name="cricket" value="cricket" id="cricket" checked /> <label for="cricket">Cricket</label>
+			<input type="checkbox" name="volleyball" value="volleyball" id="volleyball" /> <label for="volleyball">volley ball</label>
+		</div>
+		<div>
+			<label>City</label>
+			<br>
+			<select>
+				<option>Select</option>
+				<option selected="">Hyderabad</option>
+				<optionennai</option>
+				<option>Banglore</option>
+			</select>
+		</div>
+		<div>
+			<label>Image</label>
+			<br>
+			<input type="file" />
+		</div>
+
+    <div>
+        <label>Input Datetime Local</label>
+        <br>
+        <input type="datetime-local" class="inp" />
+    </div>
+    <div>
+        <label>Input month</label>
+        <br>
+        <input type="month" class="inp" />
+    </div>
+    <div>
+        <label>Input number</label>
+        <br>
+        <input type="number" class="inp" />
+    </div>
+    <div>
+        <label>Input range</label>
+        <br>
+        <input type="range" class="inp" />
+    </div>
+    <div>
+        <label>Input search</label>
+        <br>
+        <input type="search" class="inp" required />
+    </div>
+    <div>
+        <label>Input tel</label>
+        <br>
+        <input type="tel" class="inp" />
+    </div>
+    <div>
+        <label>Input time</label>
+        <br>
+        <input type="time" class="inp" />
+    </div>
+    <div>
+        <label>Input url</label>
+        <br>
+        <input type="url" class="inp" />
+    </div>
+    <div>
+        <label>Input week</label>
+        <br>
+        <input type="week" class="inp" />
+    </div>
+    <div>
+        <label>Color</label>
+        <br>
+        <input type="color" class="inp" />
+    </div>
+    <label>Datalist</label>
+            <input list="browsers" name="browser" placeholder="Select Br" class="inp">
+            <datalist id="browsers" class="inp">
+              <option value="Internet Explorer">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+		<div>
+			<input type="button" value="Login / Signup" />	
+		</div>
+	</form>
+
+
+    <!-- <form>
+        <div>
+            <label>Name</label>
+            <br>
+            <input type="text" name="username" placeholder="Enter Your Name" minlength="5" maxlength="10" required />
+        </div>
+        <div>
+            <label>Email</label>
+            <br>
+            <input type="email" name="useremail" placeholder="Enter Your Email" required />
+        </div>
+        <div>
+            <label>Mobile</label>
+            <br>
+            <input type="number" placeholder="Enter Your Mobile Number" required />
+        </div>
+        <div>
+            <label>Password</label>
+            <br>
+            <input type="password" placeholder="Enter Your Password" maxlength="10" name="password" />
+        </div>
+        <div>
+            <label>City</label>
+            <br>
+            <select class="inp">
+                <option>Select All</option>
+                <option>Hyderabad</option>
+                <option>Checnnai</option>
+                <option>Bangalore</option>
+                <option selected>Mumbai</option>
+                <option>Hyderabad</option>
+                <option>Hyderabad</option>
+                <option>Hyderabad</option>
+            </select>
+        </div>
+        <div>
+            <label>Comments</label>
+            <br>
+            <textarea rows="3"></textarea>
+            <div>
+                <input type="radio" name="gender" value="Male" /> male
+                <input type="radio" name="gender" value="Female" checked="checked" /> Female
+            </div>
+            <div>
+                <input type="checkbox" name="cricket" value="cricket" checked /> Cricket
+                <input type="checkbox" name="football" value="football" /> Football
+            </div>
+            <div>
+                <input type="button" value="Submit" class="button" />
+            </div>
+    </form> -->
+
+    <!-- <form>
+        <div>
+            <label>Name</label>
+            <input type="text" placeholder="Enter Your Name" class="inp" name="name" maxlength="10" required />
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" placeholder="Enter Your Email" class="inp" name="email" />
+        </div>
+        <div>
+            <label>Number</label>
+            <input type="number" placeholder="Enter Your Mobile number" maxlength="10" name="mobile" />
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" placeholder="Enter Your Password" maxlength="10" name="mobile" />
+        </div>
+        <div>
+            <label>CIty</label>
+            <select>
+                <option>Select City</option>
+                <option>Hyderabad</option>
+                <option>Bangalore</option>
+            </select>
+        </div>
+        <div>
+            <label>Comments</label>
+            <textarea placeholder="Comments" rows="5">
+            </textarea>
+        </div>
+        <div>
+            <input type="radio" name="gender" value="Male" checked="checked" /> male
+            <input type="radio" name="gender" value="Female" /> Female
+        </div>
+        <div>
+            <input type="checkbox" name="cricket" value="cricket" checked /> Cricket
+            <input type="checkbox" name="football" value="football" /> Football
+        </div>
+        <div>
+            <input type="button" value="Submit" class="button" />
+        </div>
+    </form>
+
+    <form>
+        <div>
+            <label>Name</label>
+            <input type="text" placeholder="Enter your Name" minlength="6" maxlength="10" required class="inp" />
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" placeholder="Enter Your Email Id" class="inp" />
+        </div>
+        <div>
+            <label>Mobile</label>
+            <input type="number" placeholder="Enter Your Mobile Number" class="inp" />
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" placeholder="Password" minlength="6" maxlength="10" class="inp" />
+        </div>
+        <div>
+            <label>City</label>
+            <select class="inp">
+		<option>Hyderabad</option>
+		<option>Checnnai</option>
+		<option>Bangalore</option>
+		<option>Mumbai</option>
+		<option>Hyderabad</option>
+		<option>Hyderabad</option>
+		<option>Hyderabad</option>
+	</select>
+        </div>
+        <div>
+            <input type="button" value="Sign Up" class="button" />
+        </div>
+        <div>
+            <input type="submit" value="Submit" class="button" />
+        </div>
+    </form>
+
+    <div>
+        <label>Input date</label>
+        <input type="date" class="inp" />
+    </div>
+    <div>
+        <label>Input Color</label>
+        <input type="color" class="inp" />
+    </div>
+    <div>
+        <label>Input Datetime Local</label>
+        <input type="datetime-local" class="inp" />
+    </div>
+    <div>
+        <label>Input month</label>
+        <input type="month" class="inp" />
+    </div>
+    <div>
+        <label>Input number</label>
+        <input type="number" class="inp" />
+    </div>
+    <div>
+        <label>Input range</label>
+        <input type="range" class="inp" />
+    </div>
+    <div>
+        <label>Input search</label>
+        <input type="search" class="inp" required />
+    </div>
+    <div>
+        <label>Input tel</label>
+        <input type="tel" class="inp" />
+    </div>
+    <div>
+        <label>Input time</label>
+        <input type="time" class="inp" />
+    </div>
+    <div>
+        <label>Input url</label>
+        <input type="url" class="inp" />
+    </div>
+    <div>
+        <label>Input week</label>
+        <input type="week" class="inp" />
+    </div>
+    <div>
+        <form action="/action_page.php" method="get">
+            <label>Datalist</label>
+            <input list="browsers" name="browser" class="inp">
+            <datalist id="browsers" class="inp">
+                  <option value="Internet Explorer">
+                  <option value="Firefox">
+                  <option value="Chrome">
+                  <option value="Opera">
+                  <option value="Safari">
+                </datalist>
+            <input type="submit" class="button" />
+        </form>
+    </div>
+    <div>
+        <label>Input Button</label>
+        <input type="button" value="Submit" class="button" />
+        <input type="submit" value="Submit" class="button" />
+    </div>
+    <div>
+        <label>File</label>
+        <input type="file" name="img" multiple />
+    </div>
+    </form> -->
+</body>
+
+</html>
